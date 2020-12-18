@@ -1,0 +1,30 @@
+{{ define "main" }}
+<style>
+ul.simple-icons-list {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+ul.simple-icons-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+    fill: currentColor;
+}
+
+ul.simple-icons-list li:nth-child(odd) {
+    background-color: rgba(201, 194, 194, 0.982);
+}
+</style>
+<ul class="simple-icons-list">
+    {{ range resources.Match "simple-icons/icons/*.svg" }}
+    <li>
+        {{ replace .Name "simple-icons/icons/" "" }}
+        <span>
+            {{ .Content | safeHTML }}
+        </span>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}

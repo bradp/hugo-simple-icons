@@ -1,0 +1,15 @@
+{{/*
+  icon
+  Will print the Simple icon matching the string passed as "context"
+
+  @author @bradp
+
+  @context String (.)
+
+  @access public
+
+  @example - Go Template
+    {{ partial "simple-icons/icon" "hugo" }}
+*/}}
+
+<span class="jam">{{- $icon := resources.Get (print "simple-icons/icons/" . ".svg" ) -}}{{- $icon.Content | safeHTML -}}</span>

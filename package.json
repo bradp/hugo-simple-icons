@@ -1,0 +1,24 @@
+{
+	"name": "hugo-simple-icons",
+	"version": "1.0.0",
+	"description": "Hugo module to easily bring Simple Icons into your project.",
+	"keywords": [
+		"hugo",
+		"icons",
+		"module",
+		"hugo-module",
+		"simple-icons"
+	],
+	"homepage": "https://github.com/bradp/hugo-simple-icons",
+	"bugs": "https://github.com/bradp/hugo-simple-icons/issues",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bradp/hugo-simple-icons.git"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Brad Parbs",
+		"email": "brad@bradparbs.com",
+		"url": "https://bradparbs.com"
+	}
+}
